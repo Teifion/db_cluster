@@ -31,3 +31,9 @@ defmodule MyApp.Repo.Migrations.AddDBClusterTables do
   end
 end
 ```
+
+Finally, update your config to link the repo:
+```
+config :db_cluster,
+  repo: MyApp.Repo
+```

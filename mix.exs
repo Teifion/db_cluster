@@ -2,13 +2,13 @@ defmodule DBCluster.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/Teifion/db_cluster"
-  @version "0.0.1"
+  @version "0.0.2"
 
   def project do
     [
       app: :db_cluster,
       version: @version,
-      elixir: "~> 1.17",
+      elixir: "~> 1.15",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       deps: deps(),
