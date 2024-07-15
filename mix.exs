@@ -26,7 +26,7 @@ defmodule DBCluster.MixProject do
       # Docs
       name: "DB Cluster",
       docs: [
-        main: "DB Cluster",
+        main: "DBCluster",
         api_reference: false,
         source_ref: "v#{@version}",
         source_url: @source_url,

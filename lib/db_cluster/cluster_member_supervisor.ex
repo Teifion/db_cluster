@@ -1,7 +1,5 @@
 defmodule DBCluster.ClusterManagerSupervisor do
-  @moduledoc """
-  The dynamic supervisor for the ClusterManager
-  """
+  @moduledoc false
   use DynamicSupervisor
   require Logger
 
