@@ -65,7 +65,7 @@ defmodule DBCluster.ClusterMemberServer do
           :ok
 
         true ->
-          Application.get_env(:db_cluster, :db_cluster_clustering_post_join_functions, [])
+          Application.get_env(:db_cluster, :db_cluster_post_join_functions, [])
           |> Enum.each(fn post_join_function ->
             apply(post_join_function, [])
           end)

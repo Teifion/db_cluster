@@ -1,6 +1,6 @@
 defmodule DBCluster.ClusterMemberLib do
   @moduledoc """
-  Library of cluster_member related functions.
+  Library of ClusterMember functions used to query database contents.
   """
   alias DBCluster.{Repo, ClusterMember, ClusterMemberQueries}
 

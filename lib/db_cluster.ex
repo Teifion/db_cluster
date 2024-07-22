@@ -41,15 +41,21 @@ defmodule DBCluster do
     repo: MyApp.Repo
   ```
 
-  You may find the cluster server launching and causing issues in tests, you can disable it via
+  ## Configs
+  You may find the cluster server launching causes issues in tests, you can disable it via
   config with:
   ```
   config :db_cluster,
     enabled: false
   ```
 
+  ### Post join functions
+  You can optionally set one or more functions to be called when a cluster join takes place as per the below config option.
+  ```
+  config :db_cluster,
+    db_cluster_post_join_functions: [&func1/0, &func2/0]
+  ```
   """
-
 
 
   alias DBCluster.{ClusterMemberLib, ClusterMemberQueries}

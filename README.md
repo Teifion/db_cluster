@@ -1,6 +1,8 @@
 # DBCluster
 A library to use the database for defining your cluster where each node is able to access the same table. Nodes can be dynamically added as long as they add the relevant entry to the table.
 
+[Hex.pm docs](https://hexdocs.pm/db_cluster/)
+
 ## Installation
 ```elixir
 def deps do
