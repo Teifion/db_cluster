@@ -41,6 +41,13 @@ defmodule DBCluster do
     repo: MyApp.Repo
   ```
 
+  You may find the cluster server launching and causing issues in tests, you can disable it via
+  config with:
+  ```
+  config :db_cluster,
+    enabled: false
+  ```
+
   """
 
 
